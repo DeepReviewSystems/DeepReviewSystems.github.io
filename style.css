@@ -1,0 +1,161 @@
+/* Basic CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+    background-color: #f4f4f9;
+}
+
+/*
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+*/
+
+header {
+    background-color: #4CAF50; /* A soft green for a refreshing look */
+    color: #ffffff; /* White text for readability */
+    padding: 15px 0;
+    text-align: center;
+    font-size: 1.2em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+/*
+nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+*/
+
+nav a {
+    color: #ffffff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #e0ffe0; /* Lighter green when hovering for an interactive feel */
+    text-decoration: underline;
+}
+
+main {
+    margin: 20px 0;
+}
+
+/*
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+*/
+footer {
+    background-color: #f1f1f1; /* Light gray for a soft look */
+    color: #333; /* Dark text for contrast */
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+    font-size: 0.9em;
+    /* border-top: 2px solid #2196F3;*/ /* Adds a top border in blue */
+    /* border-top: 2px solid #4CAF50; */  /* Adds a top border with header's green color */
+}
+
+footer p {
+    margin: 5px 0;
+    font-style: italic; /* Slightly italicized to make it more elegant */
+}
+
+
+h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+
+ul {
+    padding-left: 20px; /* Adds indentation to the list as a whole */
+    list-style-type: disc; /* Adds bullet points, you can change this to circle or square if you prefer */
+}
+
+ul li {
+    margin-bottom: 8px; /* Adds space between each list item */
+    padding-left: 10px; /* Adds extra indentation for each list item */
+}
+
+ol {
+    padding-left: 20px; /* Adds indentation to the list as a whole */
+    list-style-type: decimal; /* Adds bullet points, you can change this to circle or square if you prefer */
+}
+
+ol li {
+    margin-bottom: 8px; /* Adds space between each list item */
+    padding-left: 10px; /* Adds extra indentation for each list item */
+}
+
+
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+form button {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #45a049;
+}

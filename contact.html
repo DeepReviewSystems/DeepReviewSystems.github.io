@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="description" content="DeepReview Systems LLC - Professional abstract screening service using advanced machine learning and human curation for systematic reviews.">
+    <meta name="keywords" content="abstract screening, systematic review, machine learning, AI, systematic review service">
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | DeepReview Systems LLC - Abstract Screening Service for Systematic Reviews</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XWZBL3DW3W"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-XWZBL3DW3W');
+    </script>
+
+</head>
+<body>
+    <header>
+        <h1>DeepReview Systems LLC</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="requirements.html">Client Requirements</a>
+            <a href="process.html">Process</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Contact Us</h2>
+            <p>Reach us at info@deep-review-systems.com if you have any qeustions.</p>
+            <!--
+            <p>Ready to discuss your project? Reach out to us by filling out the contact form below, and we’ll get back to you promptly.</p>
+            Please fill out the form below to draft an email to our team. Once you click "Draft Email", an email with your project details will be prepared for you to review, personalize, and send from your email client.
+            -->  
+            <p>Ready to discuss your project?  Please fill out the form below to draft an email to our team. Once you click "Draft Email", a draft email will appear below that you can copy and paste into your email client to review, personalize, and send. </p>
+        </section>
+
+        <section>
+            <form id="contactForm">
+                <label for="name">Full Name:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email">Email Address:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="objective">Project Objective (PICO format if applicable):</label><br>
+                <textarea id="objective" name="objective" rows="3" placeholder="Briefly describe your research question" required></textarea><br><br>
+
+                <label for="inccriteria">Inclusion criteria:</label><br>
+                <textarea id="inccriteria" name="inccriteria" rows="5" placeholder="Please list all inclusion criteria" required></textarea><br><br>
+
+                <label for="exccriteria">Exclusion criteria:</label><br>
+                <textarea id="exccriteria" name="exccriteria" rows="5" placeholder="Please list all exclusion criteria" required></textarea><br><br>
+
+                <label for="abstracts">Estimated Number of Abstracts:</label><br>
+                <input type="number" id="abstracts" name="abstracts" min="1" placeholder="e.g., 10000" required><br><br>
+
+                <label for="timeline">Preferred Timeline:</label><br>
+                <input type="text" id="timeline" name="timeline" placeholder="e.g., 2-4 weeks" required><br><br>
+
+                <label for="message">Additional Details:</label><br>
+                <textarea id="message" name="message" rows="5" placeholder="Any other information that might help us understand your project needs."></textarea><br><br>
+
+                <button type="button" onclick="draftEmail()">Draft Email</button>
+            </form>
+        </section>
+
+        <!-- Section to display the draft email content -->
+        <section id="emailPreview" style="display:none; margin-top: 20px;">
+            <h3>Draft Email</h3>
+            <p>Copy the email content below and paste it into your email client:</p>
+            <pre id="emailContent" style="white-space: pre-wrap; background: #f4f4f4; padding: 10px; border-radius: 5px;"></pre>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 DeepReview Systems LLC. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function draftEmail() {
+            // Capture form data
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const objective = document.getElementById('objective').value;
+            const inccriteria = document.getElementById('inccriteria').value;
+            const exccriteria = document.getElementById('exccriteria').value;
+            const abstracts = document.getElementById('abstracts').value;
+            const timeline = document.getElementById('timeline').value;
+            const message = document.getElementById('message').value;
+
+            // Compose email content
+            const subject = `Project Inquiry from ${name}`;
+            const body = `Hello DeepReview Systems Team,
+
+My name is ${name}, and I'm interested in your abstract screening services. Here are the details of my project:
+
+- **Email**: ${email}
+- **Project Objective (e.g., PICO)**: ${objective}
+- **Inclusion Criteria are**: ${objective}
+- **Exclusion Criteria are**: ${objective}
+- **Estimated Number of Abstracts**: ${abstracts}
+- **Preferred Timeline**: ${timeline}
+
+**Additional Details:**
+${message}
+
+Thank you, and I look forward to your response.
+
+Best regards,
+${name}`;
+
+            // Display the draft email content in the preview section
+            document.getElementById('emailContent').textContent = `To: info@deep-review-systems.com\nSubject: ${subject}\n\n${body}`;
+            document.getElementById('emailPreview').style.display = 'block';
+
+            // Create the mailto link
+                // const mailtoLink = `mailto:info@deep-review-systems.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+            // Open the mailto link in a new window
+                // window.location.href = mailtoLink;
+        }
+    </script>
+</body>
+</html>

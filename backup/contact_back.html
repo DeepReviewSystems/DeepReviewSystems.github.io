@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | DeepReview Systems LLC</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>DeepReview Systems LLC</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="requirements.html">Client Requirements</a>
+            <a href="process.html">Process</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Contact Us</h2>
+            <p>Reach us at info@deep-review-systems.com if you have any qeustions.</p>
+            <p>Ready to discuss your project? Reach out to us by filling out the contact form below, and we’ll get back to you promptly.</p>
+        </section>
+
+        <section>
+            <form action="https://formspree.io/f/xpwzpnwd" method="POST">
+                <label for="name">Full Name:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email">Email Address:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="objective">Project Objective (PICO format if applicable):</label><br>
+                <textarea id="objective" name="objective" rows="3" placeholder="Briefly describe your research question" required></textarea><br><br>
+
+                <label for="inccriteria">Inclusion criteria:</label><br>
+                <textarea id="inccriteria" name="inccriteria" rows="5" placeholder="Please list all inclusion criteria" required></textarea><br><br>
+
+                <label for="exccriteria">Exclusion criteria:</label><br>
+                <textarea id="exccriteria" name="exccriteria" rows="5" placeholder="Please list all exclusion criteria" required></textarea><br><br>
+
+                <label for="abstracts">Estimated Number of Abstracts:</label><br>
+                <input type="number" id="abstracts" name="abstracts" min="1" placeholder="e.g., 10000" required><br><br>
+
+                <label for="timeline">Preferred Timeline:</label><br>
+                <input type="text" id="timeline" name="timeline" placeholder="e.g., 2-4 weeks" required><br><br>
+
+                <label for="message">Additional Details:</label><br>
+                <textarea id="message" name="message" rows="5" placeholder="Any other information that might help us understand your project needs."></textarea><br><br>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 DeepReview Systems LLC. All rights reserved.</p>
+    </footer>
+</body>
+</html>

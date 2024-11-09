@@ -1,0 +1,5 @@
+# Ignore backup files
+*.bak
+*~               # Common backup suffix
+*.tmp
+backup/          # If all backups are in a "backup" folder
